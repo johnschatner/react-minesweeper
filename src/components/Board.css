@@ -1,0 +1,6 @@
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 250px;
+  outline: 1px solid red;
+}
