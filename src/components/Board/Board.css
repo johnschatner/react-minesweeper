@@ -1,0 +1,36 @@
+.board {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto;
+
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.lost,
+.won,
+.restart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-weight: bold;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+
+.restart {
+  top: 65%;
+  font-size: 0.5rem;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  color: rgb(76, 76, 76);
+}
+
+.lost {
+  color: rgb(204, 133, 133);
+}
+.won {
+  color: rgb(133, 204, 137);
+}

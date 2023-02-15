@@ -3,8 +3,8 @@ import { useState } from "react";
 import "./Board.css";
 
 // Components
-import createBoard from "../assets/utils";
-import Cell from "./Cell";
+import createBoard from "../../assets/utils";
+import Cell from "../Cell/Cell";
 
 class Board extends React.Component {
   constructor(props) {
@@ -19,6 +19,11 @@ class Board extends React.Component {
     this.board = createBoard(this.state.boardSize, this.state.mines);
   }
 
+  restartGame() {
+    this.board = createBoard(this.state.boardSize, this.state.mines);
+    console.log(this.board);
+  }
+
   handleCellCallback(data) {
     console.log("board", this.board);
     console.log("handleCellCallback", data.cell, data.event);
@@ -30,10 +35,9 @@ class Board extends React.Component {
       console.log("Game over!");
       this.setState({ gameOver: true }); // Game over!
     }
+
     // We haven't lost
     else {
-      // We also want to show neighbouring cells without mines!
-
       // Let's see if we have won!
       let visible = []; // Check if the visible cells are equal to the winnable number
       const winnableNumber = this.state.boardSize - this.state.mines; // The winnable number is boardSize - mines
@@ -66,9 +70,18 @@ class Board extends React.Component {
     });
     return (
       <div>
-        <span>Game over: {this.state.gameOver.toString()}</span>
-        <br></br>
-        <span>Won: {this.state.hasWon.toString()}</span>
+        {this.state.gameOver && (
+          <div>
+            <span className="lost">Game over</span>
+            <span className="restart">Refresh to restart</span>
+          </div>
+        )}
+        {this.state.hasWon && (
+          <div>
+            <span className="won">You won!</span>
+            <span className="restart">Refresh to restart</span>
+          </div>
+        )}
         <div
           style={{
             pointerEvents:
@@ -78,6 +91,9 @@ class Board extends React.Component {
         >
           {cells}
         </div>
+        {/* <div className="game-reset">
+          <button onClick={this.restartGame.bind(this)}>Restart</button>
+        </div> */}
       </div>
     );
   }
