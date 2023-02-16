@@ -14,7 +14,7 @@ class Board extends React.Component {
       gameOver: false,
       hasWon: false,
       boardSize: 25,
-      mines: 2,
+      mines: 4,
     };
     this.board = createBoard(this.state.boardSize, this.state.mines);
   }
@@ -91,9 +91,9 @@ class Board extends React.Component {
         >
           {cells}
         </div>
-        {/* <div className="game-reset">
-          <button onClick={this.restartGame.bind(this)}>Restart</button>
-        </div> */}
+        <div className="game-reset">
+          <button onClick={() => window.location.reload(false)}>Restart</button>
+        </div>
       </div>
     );
   }

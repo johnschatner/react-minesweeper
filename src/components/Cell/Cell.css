@@ -15,11 +15,14 @@
 
   transition: 200ms ease-in-out;
 }
+.cell:active:not(.revealed) {
+  scale: 0.9;
+}
 .cell:hover {
-  background-color: rgb(88, 88, 88);
+  background-color: rgb(79, 78, 89);
 }
 .cell.revealed {
-  background-color: rgb(97, 97, 97);
+  background-color: rgb(89, 88, 99);
 }
 .cell.revealed.gameOver {
   background-color: rgb(126, 75, 75);
