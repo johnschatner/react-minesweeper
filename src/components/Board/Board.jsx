@@ -19,11 +19,6 @@ class Board extends React.Component {
     this.board = createBoard(this.state.boardSize, this.state.mines);
   }
 
-  restartGame() {
-    this.board = createBoard(this.state.boardSize, this.state.mines);
-    console.log(this.board);
-  }
-
   handleCellCallback(data) {
     console.log("board", this.board);
     console.log("handleCellCallback", data.cell, data.event);
