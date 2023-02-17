@@ -25,6 +25,7 @@ class Board extends React.Component {
     const gameCell = data.cell;
     gameCell.visible = true; // Show the cell
 
+    // Game
     // Check if we clicked on a mine!
     if (gameCell.hasMine) {
       console.log("Game over!");
