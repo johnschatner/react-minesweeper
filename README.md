@@ -36,7 +36,7 @@
   <p align="center">
     A modern digital clock built with ReactJS
     <br />
-    <a target="_blank" href="https://johns-react-minesweeper.netlify.app/"><strong>View Demo »</strong></a>
+    <a target="_blank" href="https://johns-minesweeper.netlify.app/"><strong>View Demo »</strong></a>
     <br />
     <br />
     <a href="https://github.com/johnschatner/react-minesweeper/issues">Report Bug</a>
@@ -75,7 +75,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://johns-react-minesweeper.netlify.app/)
+[![Product Name Screen Shot][product-screenshot]](https://johns-minesweeper.netlify.app/)
 
 An elegant Digital Clock with a handful of useful features only 6.15KB in size.
 <br>
@@ -99,7 +99,7 @@ An elegant Digital Clock with a handful of useful features only 6.15KB in size.
 
 ## Getting Started
 
-<a target="_blank" href="https://johns-react-minesweeper.netlify.app/"><strong>View Demo »</strong></a>
+<a target="_blank" href="https://johns-minesweeper.netlify.app/"><strong>View Demo »</strong></a>
 
 To get a local copy up and running follow these simple steps.
 
@@ -133,7 +133,7 @@ This project uses npm, please install the latest version:
 
 ## Usage
 
-<a target="_blank" href="https://johns-react-minesweeper.netlify.app/"><strong>View Demo »</strong></a>
+<a target="_blank" href="https://johns-minesweeper.netlify.app/"><strong>View Demo »</strong></a>
 
 The clock will work right away without any further configuration required on your end.
 
