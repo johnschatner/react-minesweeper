@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import "./Board.css";
 
 // Components
@@ -7,8 +6,8 @@ import createBoard from "../../assets/utils";
 import Cell from "../Cell/Cell";
 
 class Board extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.handleCellCallback = this.handleCellCallback.bind(this);
     this.state = {
       gameOver: false,
@@ -69,13 +68,11 @@ class Board extends React.Component {
         {this.state.gameOver && (
           <div>
             <span className="lost">Game over</span>
-            <span className="restart">Refresh to restart</span>
           </div>
         )}
         {this.state.hasWon && (
           <div>
             <span className="won">You won!</span>
-            <span className="restart">Refresh to restart</span>
           </div>
         )}
         <div
