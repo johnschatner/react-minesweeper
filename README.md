@@ -142,9 +142,10 @@ You can however change the difficulity of the game by changing the state variabl
 
 ## Roadmap
 
-- [ ] Time based on GeoLocation
-- [ ] Morphing numbers
-  - [ ] As SVG elements
+- [ ] Recursion to reveal nearby empty cells
+- [ ] Able to flag cells
+- [ ] Deeper state handling
+  - [ ] Restartable core
 
 See the [open issues](https://github.com/johnschatner/react-minesweeper/issues) for a full list of proposed features (and known issues).
 
