@@ -13,7 +13,7 @@ class Board extends React.Component {
       gameOver: false,
       hasWon: false,
       boardSize: 25,
-      mines: 1,
+      mines: 4,
     };
     this.board = createBoard(this.state.boardSize, this.state.mines);
   }
