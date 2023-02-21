@@ -34,7 +34,7 @@
   </a>
 
   <p align="center">
-    A modern digital clock built with ReactJS
+    A very simple rendition of the classic MS Minesweeper game built with ReactJS
     <br />
     <a target="_blank" href="https://johns-minesweeper.netlify.app/"><strong>View Demo »</strong></a>
     <br />
@@ -77,14 +77,11 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://johns-minesweeper.netlify.app/)
 
-An elegant Digital Clock with a handful of useful features only 6.15KB in size.
-<br>
+A very simple rendition of the classic MS Minesweeper game built with ReactJS.
 <br>
 
-- Resizeable (clicking makes clock LARGE or small)
-- Tab view (time can be seen in the browser tab)
+- Fun!
 - Responsive
-- Seconds animation
 - Built with ReactJS
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -135,11 +132,9 @@ This project uses npm, please install the latest version:
 
 <a target="_blank" href="https://johns-minesweeper.netlify.app/"><strong>View Demo »</strong></a>
 
-The clock will work right away without any further configuration required on your end.
+The game will work without any further configuration required on your end.
 
-You can also rezise the displayed clock by clicking on the displayed time. It will resize based on viewport width.
-
-Tab time will display current time in the format: `MM:SS`
+You can however change the difficulity of the game by changing the state variables (`boardSize & mines L:16-17`) inside `src/Components/Board/Board.jsx`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
